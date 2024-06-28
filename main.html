@@ -3,40 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Cards</title>
+    <title>Cards Gallery</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        .card {
+            border-radius: 10px;
+        }
+        .card-body {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
-        <div class="card-deck">
-            <!-- First Card -->
-            <div class="card bg-light">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card image">
-                <div class="card-header">Welcome to Sync5</div>
-                <div class="card-body">
-                    <h5 class="card-title">New Features</h5>
-                    <p class="card-text">Mobile and Tablet support</p>
-                    <p class="card-text">With this new update you will be able to sync your work across a large number of platforms.</p>
-                    <a href="#" class="btn btn-primary">Read more</a>
-                </div>
-                <div class="card-footer text-muted">
-                    Last updated 12 mins ago
+        <h2 class="text-center mb-4">Cards Gallery</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="https://via.placeholder.com/600x400" data-lightbox="gallery" data-title="Image 1">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 1">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Image 1</h6>
+                        <p class="card-text">Details about Image 1</p>
+                    </div>
                 </div>
             </div>
-            <!-- Second Card -->
-            <div class="card bg-warning">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card image">
-                <div class="card-header">Alert</div>
-                <div class="card-body">
-                    <h5 class="card-title">Node Dead</h5>
-                    <p class="card-text">Node 5 (east-us) is offline for the last 12 days.</p>
-                    <p class="card-text">President under Pressure</p>
-                    <p class="card-text">The US president is under pressure to respond to a widespread cyber-attack linked to China.</p>
-                    <a href="#" class="btn btn-primary">Read more</a>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="https://via.placeholder.com/600x400" data-lightbox="gallery" data-title="Image 2">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 2">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Image 2</h6>
+                        <p class="card-text">Details about Image 2</p>
+                    </div>
                 </div>
-                <div class="card-footer text-muted">
-                    Last updated 12 mins ago
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="https://via.placeholder.com/600x400" data-lightbox="gallery" data-title="Image 3">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 3">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Image 3</h6>
+                        <p class="card-text">Details about Image 3</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="https://via.placeholder.com/600x400" data-lightbox="gallery" data-title="Image 4">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 4">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Image 4</h6>
+                        <p class="card-text">Details about Image 4</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="https://via.placeholder.com/600x400" data-lightbox="gallery" data-title="Image 5">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 5">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Image 5</h6>
+                        <p class="card-text">Details about Image 5</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="https://via.placeholder.com/600x400" data-lightbox="gallery" data-title="Image 6">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 6">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Image 6</h6>
+                        <p class="card-text">Details about Image 6</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Alert Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-danger text-white">
+                    <div class="card-body">
+                        <h6 class="card-title">Alert</h6>
+                        <p class="card-text">Node 5 (east-us) is offline for the last 12 days.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -45,5 +108,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
